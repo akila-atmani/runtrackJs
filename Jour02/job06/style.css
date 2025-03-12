@@ -1,0 +1,11 @@
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+.konami-active {
+    background-color: blue;
+    color: white;
+}
