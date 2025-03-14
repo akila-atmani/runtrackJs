@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mélanger l'arc-en-ciel</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Arc-en-ciel interactif</title>
+  
 </head>
 <body>
-    <h1>Arc en ciel</h1>
-    <button onclick="melangerImages()">Mélanger</button>
-
+    <h1>Reconstituez l'arc-en-ciel</h1>
+    <button id="melanger">Mélanger</button>
     <div id="container">
-        <img src="image/arc1.png" alt="image1" class="piece">
-        <img src="image/arc2.png" alt="image2" class="piece">
-        <img src="image/arc3.png" alt="image3" class="piece">
-        <img src="image/arc4.png" alt="image4" class="piece">
-        <img src="image/arc5.png" alt="image5" class="piece">
-        <img src="image/arc6.png" alt="image6" class="piece">
+        <img class="piece" src="image/arc1.png" alt="Arc 1">
+        <img class="piece" src="image/arc2.png" alt="Arc 2">
+        <img class="piece" src="image/arc3.png" alt="Arc 3">
+        <img class="piece" src="image/arc4.png" alt="Arc 4">
+        <img class="piece" src="image/arc5.png" alt="Arc 5">
+        <img class="piece" src="image/arc6.png" alt="Arc 6">
     </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+    <button id="verifier">Vérifier</button>
+    <p id="resultat"></p>
+    
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="script.js"></script>
+     
 </body>
 </html>
+
