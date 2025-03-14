@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu du Taquin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Jeu du Taquin</h1>
+        <div id="message" class="message"></div>
+        <div class="grid">
+            <!-- Crée les carreaux (9 cases au total) -->
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile empty"></div>
+        </div>
+        <button id="restart-btn" style="display:none;" onclick="restartGame()">Recommencer</button>
+        <button id="shuffle-btn" onclick="initializeGame()">Mélanger</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
