@@ -13,12 +13,25 @@
     <p id="result"></p>
 
     <script>
+<<<<<<< HEAD
         function jsonValueKey(jsonString, key) {
             const obj = JSON.parse(jsonString);
             
             return obj[key];
         }
 
+=======
+        // Fonction jsonValueKey
+        function jsonValueKey(jsonString, key) {
+            // On parse la chaîne JSON pour la convertir en objet JavaScript
+            const obj = JSON.parse(jsonString);
+            
+            // On retourne la valeur de la clé spécifiée, ou undefined si la clé n'existe pas
+            return obj[key];
+        }
+
+        // Fonction qui affiche la ville lorsqu'on clique sur le bouton
+>>>>>>> 57a5bde897dc3d71a3131c091eab15ce873d6c1a
         function showCity() {
             const jsonString = '{"name": "Jean", "city": "Marseille", "age": 30}';
             const key = "city";
