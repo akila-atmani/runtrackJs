@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple JSON</title>
+</head>
+<body>
+    <h1>Exemple de fonction JSON</h1>
+
+    <button onclick="showCity()">Afficher la ville</button>
+
+    <p id="result"></p>
+
+    <script>
+        // Fonction jsonValueKey
+        function jsonValueKey(jsonString, key) {
+            // On parse la chaîne JSON pour la convertir en objet JavaScript
+            const obj = JSON.parse(jsonString);
+            
+            // On retourne la valeur de la clé spécifiée, ou undefined si la clé n'existe pas
+            return obj[key];
+        }
+
+        // Fonction qui affiche la ville lorsqu'on clique sur le bouton
+        function showCity() {
+            const jsonString = '{"name": "Jean", "city": "Marseille", "age": 30}';
+            const key = "city";
+            const city = jsonValueKey(jsonString, key);
+            
+            // Afficher la ville dans le paragraphe
+            document.getElementById("result").textContent = "La ville est : " + city;
+        }
+    </script>
+</body>
+</html>
