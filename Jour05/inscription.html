@@ -7,25 +7,31 @@
 </head>
 <body>
     <h2>Inscription</h2>
-    <form action="#" method="post">
+    <form id="signup-form">
         <label for="nom">Nom :</label>
         <input type="text" id="nom" name="nom" required>
-        <br>
+        <span class="error-message"></span>
+    
         <label for="prenom">Prénom :</label>
         <input type="text" id="prenom" name="prenom" required>
-        <br>
+        <span class="error-message"></span>
+    
         <label for="email">Email :</label>
         <input type="email" id="email" name="email" required>
-        <br>
+        <span class="error-message"></span>
+    
         <label for="password">Mot de passe :</label>
         <input type="password" id="password" name="password" required>
-        <br>
+        <span class="error-message"></span>
+    
         <label for="adresse">Adresse :</label>
         <input type="text" id="adresse" name="adresse" required>
-        <br>
+        <span class="error-message"></span>
+    
         <label for="code_postal">Code postal :</label>
         <input type="text" id="code_postal" name="code_postal" required>
-        <br>
+        <span class="error-message"></span>
+    
         <button type="submit">S'inscrire</button>
     </form>
     <p>voulez vous vous connecté ? <a href="connexion.html">Se connecté</a></p>
