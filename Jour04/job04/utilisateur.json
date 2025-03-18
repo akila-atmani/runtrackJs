@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "nom": "Akila",
+        "prenom": "Atamni",
+        "email": "akila.atmani@laplateforme.com"
+    },
+    {
+        "id": 2,
+        "nom": "Khouloud",
+        "prenom": "Rais",
+        "email": "khouloud.rais@laplateforme.com"
+    },
+    {
+        "id": 3,
+        "nom": "Joshua",
+        "prenom": "coucou",
+        "email": "joshua@example.com"
+    },
+
+    {
+           "id": 4,
+        "nom": "lina",
+        "prenom": "coucou",
+        "email": "lina@example.com"
+    }
+]
