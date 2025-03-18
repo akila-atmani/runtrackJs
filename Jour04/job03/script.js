@@ -6,7 +6,7 @@ async function filterPokemon() {
 
     // Récupérer le fichier JSON avec Fetch
     try {
-        const response = await fetch('http://localhost/JS/Jour04/job03/pokemon.json');
+        const response = await fetch('pokemon.json');
         const pokemons = await response.json();
 
         // Filtrer les Pokémon selon les critères
