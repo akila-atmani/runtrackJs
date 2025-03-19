@@ -13,7 +13,7 @@ async function filterPokemon() {
         // Filtrer les Pokémon selon les critères
         const filteredPokemons = pokemons.filter(pokemon => {
             const matchesId = id ? pokemon.id == id : true;
-
+        
             // Vérifier si le nom correspond dans une des langues (français, anglais, japonais, chinois)
             const matchesName = name 
                 ? Object.values(pokemon.name || {}).some(n => n.toLowerCase().includes(name)) 
