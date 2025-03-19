@@ -1,10 +1,8 @@
-// Fonction pour filtrer les Pokémon en fonction des critères
 async function filterPokemon() {
     const id = document.getElementById('id').value;
     const name = document.getElementById('name').value.toLowerCase();
     const type = document.getElementById('type').value;
 
-    // Récupérer le fichier JSON avec Fetch
     try {
         const response = await fetch('pokemon.json');
         const pokemons = await response.json();
@@ -33,8 +31,6 @@ function displayPokemons(pokemons) {
         resultDiv.innerHTML = 'Aucun Pokémon ne correspond à ces critères.';
         return;
     }
-
-    // Afficher chaque Pokémon filtré
     pokemons.forEach(pokemon => {
         const pokemonDiv = document.createElement('div');
         pokemonDiv.classList.add('pokemon');
