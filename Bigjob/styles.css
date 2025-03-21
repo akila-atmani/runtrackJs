@@ -3,7 +3,7 @@
 /* Style global */
 body {
     font-family: 'Arial', sans-serif;
-    background: #a2afc9;
+    background: #929bad;
     color: #333;
     margin-top: 50px;
 }
@@ -37,7 +37,7 @@ h2 {
 
 /* Formulaire d'Inscription et Connexion */
 .form-section, .calendar-section, .moderator-section, .user-management-section {
-    background-color: #e4aeae;
+    background-color: #cd8e8e;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
