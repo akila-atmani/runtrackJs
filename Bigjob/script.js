@@ -26,7 +26,7 @@ function renderUsers() {
     });
 }
 
-// Ajouter une demande de présence
+// Ajouter une demande de consultation 
 document.getElementById("submit-request").addEventListener("click", function() {
     const name = document.getElementById("name").value;
     const date = document.getElementById("presence-date").value;
