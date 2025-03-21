@@ -26,7 +26,7 @@ h2 {
 }
 
 .logo {
-    width: 150px; /* Ajustez la taille selon vos besoins */
+    width: 300px; 
     height: auto;
     transition: all 0.3s ease;
 }
@@ -37,7 +37,7 @@ h2 {
 
 /* Formulaire d'Inscription et Connexion */
 .form-section, .calendar-section, .moderator-section, .user-management-section {
-    background-color: #ffffff;
+    background-color: #e4aeae;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -54,7 +54,7 @@ h2 {
 }
 
 input.form-control:focus {
-    border-color: #007bff;
+    border-color: #ffe100;
 }
 
 ul {
@@ -96,7 +96,7 @@ body, html {
 
 /* Footer */
 .footer {
-    background-color: #693c3c; /* Couleur de fond sombre */
+   
     color: white; /* Texte en blanc */
     padding: 50px 0;
     margin-top: auto; /* Permet de pousser le footer en bas */
