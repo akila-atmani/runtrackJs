@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Happy Meal</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="titre">
+                <h1>Happy Meal</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./files/panier.html">Panier <span id="cart-count">0</span></a></li>
+                    <li><a href="./files/favoris.html">Favoris</a></li>
+                    <li><a href="./files/planning.html">Planning</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Barre de recherche avec autocomplétion -->
+    <div class="input">
+        <input type="text" id="searchBar" placeholder="Rechercher une recette..." onkeyup="searchRecipe()">
+        <ul id="suggestionsList"></ul>
+    </div>
+
+    <!-- Section pour afficher les recettes -->
+    <section class="recettes">
+        <h2>Nos Recettes</h2>
+        <div id="recettes-container" class="row">
+            <!-- Les recettes seront ajoutées ici dynamiquement -->
+        </div>
+    </section>
+
+    <!-- Popup modale pour notification -->
+    <div id="favorisPopup" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Recette ajoutée aux favoris !</p>
+        </div>
+    </div>
+
+    <!-- Modale de détail de la recette -->
+    <div class="modal fade" id="recetteModal" tabindex="-1" aria-labelledby="recetteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" class="img-fluid" alt="Recette Image">
+                    <p id="modalDescription"></p>
+                    <p id="modalCategorie"></p>
+
+                    <h5>Ingrédients :</h5>
+                    <ul id="modalIngredients"></ul>
+
+                    <h5>Étapes :</h5>
+                    <p id="modalEtapes"></p>
+
+                    <!-- Bouton d'ajout aux favoris dans la modale -->
+                    <button id="addToFavorites" class="btn btn-warning" onclick="addToFavorites(modalTitle.textContent)">
+                        Ajouter aux favoris
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pagination" class="pagination-container text-center mt-4"></div>
+
+
+
+
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Happy Meal | Tous droits réservés</p>
+            <div class="footer-links">
+                <a href="#">À propos</a> | 
+                <a href="#">Nos produits</a> | 
+                <a href="#">Contactez-nous</a>
+            </div>
+            <div class="footer-socials">
+                <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="#" target="_blank"><i class="bi bi-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script defer src="./javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planning des Repas</title>
+  <!-- Polices Google (Dancing Script pour le titre) -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <!-- Ton fichier CSS -->
+  <link rel="stylesheet" href="../styles/planning.css">
+</head>
+<body>
+
+  <!-- HEADER identique à l'accueil -->
+  <header>
+    <div class="header-container">
+      <div class="titre">
+        <h1>Planning</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="favoris.html">Favoris</a></li>
+          <li><a href="panier.html">Panier</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main class="planning-container">
+    <h2>Organisez vos repas de la semaine</h2>
+
+    <table class="planning-table">
+      <thead>
+        <tr>
+          <th>Jour</th>
+          <th>Matin</th>
+          <th>Midi</th>
+          <th>Soir</th>
+        </tr>
+      </thead>
+      <tbody id="planning-body">
+        <!-- Les lignes seront générées par le JS -->
+      </tbody>
+    </table>
+
+    <button class="planning-button" id="save-planning">Sauvegarder</button>
+  </main>
+
+  
+
+  <footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Happy Meal | Tous droits réservés</p>
+        <div class="footer-links">
+            <a href="#">À propos</a> | 
+            <a href="#">Nos produits</a> | 
+            <a href="#">Contactez-nous</a>
+        </div>
+        <div class="footer-socials">
+            <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="#" target="_blank"><i class="bi bi-twitter"></i></a>
+        </div>
+    </div>
+
+    <script src="../javascript/planning.js"></script>
+</footer>
+</footer>
+</body>
+</html>
